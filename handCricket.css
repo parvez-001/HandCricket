@@ -1,0 +1,101 @@
+body {
+    background-color: #2d2a3d;
+    background-image: url("comic-style-wallpaper_23-2148809775.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    color: white;
+    font-weight: bold;
+}
+.message {
+    margin: 5em 0 2em;
+    text-align: center;
+    color:black;
+}
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+.computer img, .player img {
+    width: 75%;
+}
+/* shake animation */
+.shakeComputer {
+    animation: shakeComputer 1s linear;
+}
+/* shake animation for player */
+.shakePlayer {
+    animation: shakePlayer 1s linear;
+}
+.points {
+    color: black;
+    font-size: 25px;
+    margin: 2em 0;
+    text-align: center;
+    font-weight: bold;
+}
+.computerPoints {
+    margin-left: 3em;
+}
+.playerPoints {
+    margin-right: 3em;
+}
+.options {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+.options button {
+    background-color: #003300;
+    color: rgba(255, 255, 255, 0.812);
+    border: 3px solid rgba(0, 0, 0, 0.893);
+    padding: 1em 2em;
+    border-radius: 7px;
+    width: 100px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all linear;
+}
+.options button:hover {
+    background-color: rgba(19, 155, 193, 0.596);
+    border: 3px solid rgba(14, 121, 198, 0.907);
+}
+.option1{
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;   
+}
+.option1 button {
+    background-color: rgba(0, 0, 0, 0.323);
+    color: rgba(255, 255, 255, 0.812);
+    border: 3px solid rgba(0, 0, 0, 0.893);
+    padding: 1em 2em;
+    border-radius: 7px;
+    width: 100px;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all linear;
+}
+.option1 button:hover {
+    background-color: rgba(19, 155, 193, 0.596);
+    border: 3px solid rgba(17, 149, 243, 0.907);
+}
+@keyframes shakeComputer {
+    0% { transform: rotate(30deg); }
+    25% { transform: rotate(-30deg); }
+    50% { transform: rotate(30eg); }
+    75% { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+  }
+  @keyframes shakePlayer {
+    0% { transform: rotate(-30deg); }
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(-30eg); }
+    75% { transform: rotate(30deg); }
+    100% { transform: rotate(0deg); }
+  }
